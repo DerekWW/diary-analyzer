@@ -16,9 +16,7 @@ app.use(morgan('dev'))
 app.use(bodyParser.json())
 app.use(cookieParser())
 
-app.get('/', (req, res, next) => {
-  res.send('Hello World!')
-})
+app.use('/', require('./routes'))
 
 app.listen(PORT, () => {
   console.log('Listening on port: ', PORT)

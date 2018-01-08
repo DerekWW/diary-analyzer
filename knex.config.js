@@ -3,7 +3,11 @@
 module.exports = {
   development: {
     client: 'pg',
-    connection: 'postgres://localhost/diary-analyzer'
+    connection: {
+      host: 'postgres://localhost/diary_analyzer',
+      user: process.env.DB_USERNAME,
+      password: process.env.DB_PASSWORD
+    }
   },
 
   production: {
