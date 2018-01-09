@@ -17,11 +17,11 @@ router.get('/google',
   passport.authenticate('google', { scope: 'https://www.google.com/m8/feeds' })
  )
 
-app.get('/google/callback',
+router.get('/google/callback',
 passport.authenticate('google', { failureRedirect: '/asdf' }),
   function(req, res) {
     res.redirect('/');
   }
 );
 
-module.export = router
+module.exports = router

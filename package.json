@@ -20,6 +20,7 @@
     "humps": "^2.0.1",
     "knex": "^0.14.2",
     "lodash": "^4.17.4",
+    "passport": "^0.4.0",
     "passport-google-oauth": "^1.0.0",
     "passport-oauth": "^1.0.0",
     "pg": "^7.4.1",
